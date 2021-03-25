@@ -10,10 +10,21 @@
 		8A117EFB260CC98400B0D08B /* RemoteFunctions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A117EF1260CC98400B0D08B /* RemoteFunctions.framework */; };
 		8A117F00260CC98400B0D08B /* RemoteFunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A117EFF260CC98400B0D08B /* RemoteFunctionsTests.swift */; };
 		8A117F02260CC98400B0D08B /* RemoteFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A117EF4260CC98400B0D08B /* RemoteFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A117F0F260CC9A100B0D08B /* core in Resources */ = {isa = PBXBuildFile; fileRef = 8A117F0B260CC9A100B0D08B /* core */; };
-		8A117F10260CC9A100B0D08B /* controller in Resources */ = {isa = PBXBuildFile; fileRef = 8A117F0C260CC9A100B0D08B /* controller */; };
-		8A117F11260CC9A100B0D08B /* model in Resources */ = {isa = PBXBuildFile; fileRef = 8A117F0D260CC9A100B0D08B /* model */; };
 		8A117F12260CC9A100B0D08B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A117F0E260CC9A100B0D08B /* Constants.swift */; };
+		8A36D5F6260CECB700D647DC /* ControllerFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D5F4260CECB700D647DC /* ControllerFunction.swift */; };
+		8A36D5F7260CECB700D647DC /* ControllerFunctionInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D5F5260CECB700D647DC /* ControllerFunctionInterface.swift */; };
+		8A36D5FF260CECC500D647DC /* CoreRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D5F8260CECC500D647DC /* CoreRepositoryInterface.swift */; };
+		8A36D600260CECC500D647DC /* CoreFunctionBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D5F9260CECC500D647DC /* CoreFunctionBase.swift */; };
+		8A36D601260CECC500D647DC /* CoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D5FA260CECC500D647DC /* CoreRepository.swift */; };
+		8A36D602260CECC500D647DC /* CoreFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D5FB260CECC500D647DC /* CoreFunction.swift */; };
+		8A36D603260CECC500D647DC /* CoreException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D5FC260CECC500D647DC /* CoreException.swift */; };
+		8A36D604260CECC500D647DC /* CoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D5FD260CECC500D647DC /* CoreModel.swift */; };
+		8A36D605260CECC500D647DC /* CoreFunctionInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D5FE260CECC500D647DC /* CoreFunctionInterface.swift */; };
+		8A36D60B260CECD500D647DC /* BaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D606260CECD500D647DC /* BaseType.swift */; };
+		8A36D60C260CECD500D647DC /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D607260CECD500D647DC /* Type.swift */; };
+		8A36D60D260CECD500D647DC /* BuildParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D608260CECD500D647DC /* BuildParam.swift */; };
+		8A36D60E260CECD500D647DC /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D609260CECD500D647DC /* Param.swift */; };
+		8A36D60F260CECD500D647DC /* ParamSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D60A260CECD500D647DC /* ParamSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +44,21 @@
 		8A117EFA260CC98400B0D08B /* RemoteFunctionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteFunctionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A117EFF260CC98400B0D08B /* RemoteFunctionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFunctionsTests.swift; sourceTree = "<group>"; };
 		8A117F01260CC98400B0D08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A117F0B260CC9A100B0D08B /* core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = core; sourceTree = "<group>"; };
-		8A117F0C260CC9A100B0D08B /* controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = controller; sourceTree = "<group>"; };
-		8A117F0D260CC9A100B0D08B /* model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model; sourceTree = "<group>"; };
 		8A117F0E260CC9A100B0D08B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A36D5F4260CECB700D647DC /* ControllerFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerFunction.swift; sourceTree = "<group>"; };
+		8A36D5F5260CECB700D647DC /* ControllerFunctionInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerFunctionInterface.swift; sourceTree = "<group>"; };
+		8A36D5F8260CECC500D647DC /* CoreRepositoryInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreRepositoryInterface.swift; sourceTree = "<group>"; };
+		8A36D5F9260CECC500D647DC /* CoreFunctionBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreFunctionBase.swift; sourceTree = "<group>"; };
+		8A36D5FA260CECC500D647DC /* CoreRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreRepository.swift; sourceTree = "<group>"; };
+		8A36D5FB260CECC500D647DC /* CoreFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreFunction.swift; sourceTree = "<group>"; };
+		8A36D5FC260CECC500D647DC /* CoreException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreException.swift; sourceTree = "<group>"; };
+		8A36D5FD260CECC500D647DC /* CoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreModel.swift; sourceTree = "<group>"; };
+		8A36D5FE260CECC500D647DC /* CoreFunctionInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreFunctionInterface.swift; sourceTree = "<group>"; };
+		8A36D606260CECD500D647DC /* BaseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseType.swift; sourceTree = "<group>"; };
+		8A36D607260CECD500D647DC /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		8A36D608260CECD500D647DC /* BuildParam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildParam.swift; sourceTree = "<group>"; };
+		8A36D609260CECD500D647DC /* Param.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
+		8A36D60A260CECD500D647DC /* ParamSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParamSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +101,10 @@
 		8A117EF3260CC98400B0D08B /* RemoteFunctions */ = {
 			isa = PBXGroup;
 			children = (
+				8A36D5F3260CECA500D647DC /* model */,
+				8A36D5F2260CEC9D00D647DC /* core */,
+				8A36D5F1260CEC9600D647DC /* controller */,
 				8A117F0E260CC9A100B0D08B /* Constants.swift */,
-				8A117F0C260CC9A100B0D08B /* controller */,
-				8A117F0B260CC9A100B0D08B /* core */,
-				8A117F0D260CC9A100B0D08B /* model */,
 				8A117EF4260CC98400B0D08B /* RemoteFunctions.h */,
 				8A117EF5260CC98400B0D08B /* Info.plist */,
 			);
@@ -96,6 +118,41 @@
 				8A117F01260CC98400B0D08B /* Info.plist */,
 			);
 			path = RemoteFunctionsTests;
+			sourceTree = "<group>";
+		};
+		8A36D5F1260CEC9600D647DC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A36D5F4260CECB700D647DC /* ControllerFunction.swift */,
+				8A36D5F5260CECB700D647DC /* ControllerFunctionInterface.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		8A36D5F2260CEC9D00D647DC /* core */ = {
+			isa = PBXGroup;
+			children = (
+				8A36D5FC260CECC500D647DC /* CoreException.swift */,
+				8A36D5FB260CECC500D647DC /* CoreFunction.swift */,
+				8A36D5F9260CECC500D647DC /* CoreFunctionBase.swift */,
+				8A36D5FE260CECC500D647DC /* CoreFunctionInterface.swift */,
+				8A36D5FD260CECC500D647DC /* CoreModel.swift */,
+				8A36D5FA260CECC500D647DC /* CoreRepository.swift */,
+				8A36D5F8260CECC500D647DC /* CoreRepositoryInterface.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		8A36D5F3260CECA500D647DC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8A36D606260CECD500D647DC /* BaseType.swift */,
+				8A36D608260CECD500D647DC /* BuildParam.swift */,
+				8A36D609260CECD500D647DC /* Param.swift */,
+				8A36D60A260CECD500D647DC /* ParamSet.swift */,
+				8A36D607260CECD500D647DC /* Type.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +248,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A117F11260CC9A100B0D08B /* model in Resources */,
-				8A117F10260CC9A100B0D08B /* controller in Resources */,
-				8A117F0F260CC9A100B0D08B /* core in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +265,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A36D601260CECC500D647DC /* CoreRepository.swift in Sources */,
 				8A117F12260CC9A100B0D08B /* Constants.swift in Sources */,
+				8A36D604260CECC500D647DC /* CoreModel.swift in Sources */,
+				8A36D5F7260CECB700D647DC /* ControllerFunctionInterface.swift in Sources */,
+				8A36D602260CECC500D647DC /* CoreFunction.swift in Sources */,
+				8A36D5FF260CECC500D647DC /* CoreRepositoryInterface.swift in Sources */,
+				8A36D605260CECC500D647DC /* CoreFunctionInterface.swift in Sources */,
+				8A36D600260CECC500D647DC /* CoreFunctionBase.swift in Sources */,
+				8A36D603260CECC500D647DC /* CoreException.swift in Sources */,
+				8A36D60E260CECD500D647DC /* Param.swift in Sources */,
+				8A36D5F6260CECB700D647DC /* ControllerFunction.swift in Sources */,
+				8A36D60B260CECD500D647DC /* BaseType.swift in Sources */,
+				8A36D60C260CECD500D647DC /* Type.swift in Sources */,
+				8A36D60F260CECD500D647DC /* ParamSet.swift in Sources */,
+				8A36D60D260CECD500D647DC /* BuildParam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

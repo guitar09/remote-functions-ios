@@ -46,7 +46,7 @@ class CoreFunction: CoreFunctionInterface {
             
             let paramSet = params[key]
             
-            if(replaceAllParams) { if (paramSet == nil) {throw showErrorParams(params: key.param)} }
+            if(replaceAllParams) { if (paramSet == nil) {throw showErrorParams(param: key.param)} }
             
             if(paramSet != nil) {
                 functionAll = functionAll.replacingOccurrences(of: key.param, with: paramSet!.param)
