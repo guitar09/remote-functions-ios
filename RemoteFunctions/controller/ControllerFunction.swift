@@ -48,7 +48,7 @@ class ControllerFunction: ControllerFunctionInterface {
     }
     
     func printFunction() throws -> String {
-        return try getCoreFunction().getFunction(core: CoreModel(function: function, params: paramList, forceReplaceAllParams: forceReplaceAllParams))
+        return try getCoreFunction().getFunction(core: CoreModel(function: function, params: paramList, functionName: nameFunction, forceReplaceAllParams: forceReplaceAllParams))
     }
     
     func getResult<T : BaseType>(core : CoreModel) throws -> T {
