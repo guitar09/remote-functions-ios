@@ -8,11 +8,7 @@
 
 import Foundation
 
-enum ExceptionFunction: Error {
-    case error/*(error : String)*/
-}
-
-struct MyError: Error {
+struct CoreException: Error {
     let msg: String
 
 }

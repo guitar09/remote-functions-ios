@@ -87,13 +87,13 @@ class CoreFunction: CoreFunctionInterface {
         
     }
     
-    func showError() -> MyError{
-        return MyError(msg: "Problema")
+    func showError() -> CoreException {
+        return CoreException(msg: "Problema")
         
     }
     
-    func showErrorParams(param : String) -> MyError{
-        return MyError(msg: "Existem Parametros que não foram preenchidos \(param)")
+    func showErrorParams(param : String) -> CoreException{
+        return CoreException(msg: "Existem Parametros que não foram preenchidos \(param)")
         
     }
 }
