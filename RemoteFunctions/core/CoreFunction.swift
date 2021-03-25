@@ -46,7 +46,7 @@ class CoreFunction: CoreFunctionInterface {
             
             let paramSet = params[key]
             
-            if(replaceAllParams) { if (paramSet == nil) {throw showErrorParams()} }
+            if(replaceAllParams) { if (paramSet == nil) {throw showErrorParams(params: key.param)} }
             
             if(paramSet != nil) {
                 functionAll = functionAll.replacingOccurrences(of: key.param, with: paramSet!.param)
@@ -92,8 +92,8 @@ class CoreFunction: CoreFunctionInterface {
         
     }
     
-    func showErrorParams() -> MyError{
-        return MyError(msg: "Problema Parametros")
+    func showErrorParams(param : String) -> MyError{
+        return MyError(msg: "Existem Parametros que não foram preenchidos \(param)")
         
     }
 }
