@@ -10,6 +10,10 @@
 		8A117EFB260CC98400B0D08B /* RemoteFunctions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A117EF1260CC98400B0D08B /* RemoteFunctions.framework */; };
 		8A117F00260CC98400B0D08B /* RemoteFunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A117EFF260CC98400B0D08B /* RemoteFunctionsTests.swift */; };
 		8A117F02260CC98400B0D08B /* RemoteFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A117EF4260CC98400B0D08B /* RemoteFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A117F0F260CC9A100B0D08B /* core in Resources */ = {isa = PBXBuildFile; fileRef = 8A117F0B260CC9A100B0D08B /* core */; };
+		8A117F10260CC9A100B0D08B /* controller in Resources */ = {isa = PBXBuildFile; fileRef = 8A117F0C260CC9A100B0D08B /* controller */; };
+		8A117F11260CC9A100B0D08B /* model in Resources */ = {isa = PBXBuildFile; fileRef = 8A117F0D260CC9A100B0D08B /* model */; };
+		8A117F12260CC9A100B0D08B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A117F0E260CC9A100B0D08B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		8A117EFA260CC98400B0D08B /* RemoteFunctionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteFunctionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A117EFF260CC98400B0D08B /* RemoteFunctionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFunctionsTests.swift; sourceTree = "<group>"; };
 		8A117F01260CC98400B0D08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A117F0B260CC9A100B0D08B /* core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = core; sourceTree = "<group>"; };
+		8A117F0C260CC9A100B0D08B /* controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = controller; sourceTree = "<group>"; };
+		8A117F0D260CC9A100B0D08B /* model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model; sourceTree = "<group>"; };
+		8A117F0E260CC9A100B0D08B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,10 @@
 		8A117EF3260CC98400B0D08B /* RemoteFunctions */ = {
 			isa = PBXGroup;
 			children = (
+				8A117F0E260CC9A100B0D08B /* Constants.swift */,
+				8A117F0C260CC9A100B0D08B /* controller */,
+				8A117F0B260CC9A100B0D08B /* core */,
+				8A117F0D260CC9A100B0D08B /* model */,
 				8A117EF4260CC98400B0D08B /* RemoteFunctions.h */,
 				8A117EF5260CC98400B0D08B /* Info.plist */,
 			);
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					8A117EF0260CC98400B0D08B = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					8A117EF9260CC98400B0D08B = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -178,6 +191,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A117F11260CC9A100B0D08B /* model in Resources */,
+				8A117F10260CC9A100B0D08B /* controller in Resources */,
+				8A117F0F260CC9A100B0D08B /* core in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A117F12260CC9A100B0D08B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +357,7 @@
 		8A117F06260CC98400B0D08B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.teraculus.RemoteFunctions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +382,7 @@
 		8A117F07260CC98400B0D08B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +406,7 @@
 		8A117F09260CC98400B0D08B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RemoteFunctionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +424,7 @@
 		8A117F0A260CC98400B0D08B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RemoteFunctionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
