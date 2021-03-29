@@ -25,6 +25,10 @@
 		8A36D60D260CECD500D647DC /* BuildParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D608260CECD500D647DC /* BuildParam.swift */; };
 		8A36D60E260CECD500D647DC /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D609260CECD500D647DC /* Param.swift */; };
 		8A36D60F260CECD500D647DC /* ParamSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D60A260CECD500D647DC /* ParamSet.swift */; };
+		8A36D6392611462900D647DC /* RemoteFunctionsRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D6382611462900D647DC /* RemoteFunctionsRobot.swift */; };
+		8A36D63B2611464A00D647DC /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D63A2611464A00D647DC /* Stubs.swift */; };
+		8A36D64126120D8900D647DC /* RemoteRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D64026120D8900D647DC /* RemoteRobot.swift */; };
+		8A36D64326120DA400D647DC /* RemoteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36D64226120DA400D647DC /* RemoteTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		8A36D608260CECD500D647DC /* BuildParam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildParam.swift; sourceTree = "<group>"; };
 		8A36D609260CECD500D647DC /* Param.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
 		8A36D60A260CECD500D647DC /* ParamSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParamSet.swift; sourceTree = "<group>"; };
+		8A36D6382611462900D647DC /* RemoteFunctionsRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFunctionsRobot.swift; sourceTree = "<group>"; };
+		8A36D63A2611464A00D647DC /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
+		8A36D64026120D8900D647DC /* RemoteRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRobot.swift; sourceTree = "<group>"; };
+		8A36D64226120DA400D647DC /* RemoteTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				8A117EFF260CC98400B0D08B /* RemoteFunctionsTests.swift */,
+				8A36D6382611462900D647DC /* RemoteFunctionsRobot.swift */,
+				8A36D64226120DA400D647DC /* RemoteTest.swift */,
+				8A36D64026120D8900D647DC /* RemoteRobot.swift */,
+				8A36D63A2611464A00D647DC /* Stubs.swift */,
 				8A117F01260CC98400B0D08B /* Info.plist */,
 			);
 			path = RemoteFunctionsTests;
@@ -287,6 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A36D63B2611464A00D647DC /* Stubs.swift in Sources */,
+				8A36D6392611462900D647DC /* RemoteFunctionsRobot.swift in Sources */,
+				8A36D64126120D8900D647DC /* RemoteRobot.swift in Sources */,
+				8A36D64326120DA400D647DC /* RemoteTest.swift in Sources */,
 				8A117F00260CC98400B0D08B /* RemoteFunctionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

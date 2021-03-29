@@ -11,4 +11,7 @@ import Foundation
 class Constants {
     
     static let emptyString : String = ""
+    
+    static let messageNotFoundParamsExeception: String = "Existem parametros que não foram preenchidos"
+    static let messageRuntimeFunctionException: String = "Não foi possível executar a função: Isso pode acontecer quando o tipo do retorno não foi o esperado ou a função Java Script não está correta"
 }
